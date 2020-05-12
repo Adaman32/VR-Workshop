@@ -38,9 +38,6 @@ function moveBoxes(){
     console.log("executed");
   }
   console.log(myOtherBox.object3D.position.x);
-
-
-  //myOtherBox.object3D.position.z += rotationSpeed;
 }
 
 setInterval(spin, 16); //equivalent to 60 fps
