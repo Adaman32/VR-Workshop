@@ -6,6 +6,7 @@ var rotationTorus = 0.01;
 var positive = true;
 var myOtherBox = document.getElementById('myOtherBox');
 var torus = document.getElementById('torus');
+var torus2 = document.getElementById('torus2');
 var myBox = document.getElementById('myBox');
 var move = 0.1;
 
@@ -29,6 +30,7 @@ function spin(){
 
 function spinTorus(){
   torus.object3D.rotation.y += rotationTorus;
+	torus2.object3D.rotation.z += 2*rotationTorus;
 }
 
 function moveBoxes(){
