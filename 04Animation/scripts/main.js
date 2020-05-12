@@ -2,7 +2,7 @@
 
 // changing individual properties with code and using setInterval
 var rotationSpeed = 0.01;
-var rotationTorus = 0.02
+var rotationTorus = 0.01;
 var positive = true;
 var myOtherBox = document.getElementById('myOtherBox');
 var torus = document.getElementById('torus');
