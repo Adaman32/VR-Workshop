@@ -43,11 +43,12 @@ myOtherBox.addEventListener('click', function(){ // uses a fuse
 	console.log('grew');
 });
 
-function rotate(){
+function rotateMove(){
 	myBox.object3D.rotation.x += 90;
-	myBix.object3D.rotation.z += 90;
+	myBox.object3D.rotation.z += 90;
+	myBox.object3D.position.z -= 0.5;
 }
 
 myBox.addEventListener('click', function(){
-	rotate();
+	rotateMove();
 });
