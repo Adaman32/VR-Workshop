@@ -13,23 +13,22 @@
           <img id="wood" src="images/wood.jpg" />
           <img id="wood2" src="images/wood2.jpg" />
           <img id="grass" src="images/grass.jpg" />
-          <img id="face" src="images/face.png" />
+          <img id="face" src="images/face.jpg" />
       </a-assets>
 
       <a-camera>
         <a-entity id="mouseCursor"
           cursor="fuse: true; fuseTimeout: 1500">
         </a-entity>
-        <a-image id="cursorRing"
+        <a-circle id="cursorRing"
           position="0 0 -1"
-          src="#face"
-          width="0.05"
-          height = "0.05"
-          >
+          height="0.5"
+          width="0.5"
+          material="src:#face">
           <!-- radius-inner= "0.02"
           radius-outer= "0.03"
           material="color: red; shader: flat"> -->
-        </a-image>
+        </a-ring>
       </a-camera>
 
       <a-box id="myBox"
