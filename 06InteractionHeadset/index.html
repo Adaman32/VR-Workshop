@@ -19,12 +19,12 @@
         <a-entity id="mouseCursor"
           cursor="fuse: true; fuseTimeout: 1500">
         </a-entity>
-        <a-dodecahedron id="cursorRing"
+        <a-ring id="cursorRing"
           position="0 0 -1"
-          rotation="0 45 0"
-          radius= "0.06"
-          material="color: pink; shader: flat">
-        </a-dodecahedron>
+          radius-inner= "0.02"
+          radius-outer= "0.03"
+          material="color: red; shader: flat">
+        </a-ring>
       </a-camera>
 
       <a-box id="myBox"
