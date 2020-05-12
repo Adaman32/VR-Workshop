@@ -33,13 +33,12 @@ function spinTorus(){
 
 function moveBoxes(){
   myOtherBox.object3D.position.x += move;
-  if(myOtherBox.object3D.position.x > 10 || myOtherBox.object3D.position.x < -10 ){
+  myBox.object3D.position.z += move;
+  if(myOtherBox.object3D.position.x > 5 || myOtherBox.object3D.position.x < -5 ){
     move = -(move);
-    console.log("executed");
   }
-  console.log(myOtherBox.object3D.position.x);
 }
 
 setInterval(spin, 16); //equivalent to 60 fps
-setInterval(spinTorus, 32);
+setInterval(spinTorus, 16);
 setInterval(moveBoxes, 16);
